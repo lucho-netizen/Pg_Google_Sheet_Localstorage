@@ -13,64 +13,55 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-primary d-flex justify-content-center align-items-center vh-100">
+  <body
+    class="bg-primary d-flex justify-content-center align-items-center vh-100"
+  >
     <div
       class="bg-white p-5 rounded-5 text-secondary shadow"
       style="width: 25rem"
     >
-      <div class="d-flex justify-content-center">
-        <img
-          src="img/iub.jpg"
-          alt="login-icon"
-          style="height: 7rem"
-        />
-      </div>
-      
-      <div class="input-group mt-4">
-        <div class="input-group-text bg-primary">
-          <img
-            src="img/logo usuario.png"
-            alt="username-icon"
-            style="height: 1rem"
+      <form id="form">
+        <div class="d-flex justify-content-center">
+          <img src="../img/iub.jpg" alt="login-icon" style="height: 7rem" />
+        </div>
+
+        <div class="input-group mt-4">
+          <div class="input-group-text bg-primary">
+            <img
+              src="../img/logo usuario.png"
+              alt="username-icon"
+              style="height: 1rem"
+            />
+          </div>
+          <input class="form-control bg-light" type="text" placeholder="Identificacion" id="identificacion"/>
+        </div>
+        <div class="input-group mt-1">
+          <div class="input-group-text bg-primary">
+            <img src="../img/security.png" alt="password-icon" style="height: 1rem"/>
+          </div>
+          <input class="form-control bg-light" type="password" placeholder="contraseña" id="contraseña"
           />
         </div>
-        <input
-          class="form-control bg-light"
-          type="text"
-          placeholder="Identificacion"
-        />
-      </div>
-      <div class="input-group mt-1">
-        <div class="input-group-text bg-primary">
-          <img
-            src="img/security.png"
-            alt="password-icon"
-            style="height: 1rem"
-          />
+
+        <div>
+          <input type="submit" class="btn btn-primary text-white w-100 mt-4 fw-semibold shadow-sm">
+        
+       
         </div>
-        <input
-          class="form-control bg-light"
-          type="password"
-          placeholder="contraseña"
-        />
-      </div>
-      
-      <div class="btn btn-primary text-white w-100 mt-4 fw-semibold shadow-sm">
-        Ingresar
-      </div>
-      
-      <div class="p-3">
-        <div class="border-bottom text-center" style="height: 0.9rem">
-          <span class="bg-white px-3">o</span>
+
+        <div class="p-3">
+          <div class="border-bottom text-center" style="height: 0.9rem">
+            <span class="bg-white px-3">o</span>
+          </div>
         </div>
-      </div>
-      <div class="d-flex gap-1 justify-content-center mt-1">
-        <div>No tiene cuenta?</div>
-        <a href="#" class="text-decoration-none text-primary fw-semibold"
-          >Registrate</a
-        >
-      </div>
-     
+        <div class="d-flex gap-1 justify-content-center mt-1">
+          <div>No tiene cuenta?</div>
+          <a href="#" class="text-decoration-none text-primary fw-semibold"
+            >Registrate</a
+          >
+        </div>
+      </form>
     </div>
+    <script src="../main.js"></script>
   </body>
 </html>
