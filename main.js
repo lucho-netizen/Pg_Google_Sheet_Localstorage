@@ -11,8 +11,7 @@ form.addEventListener("submit", (e) => {
     pass: contraseña,
   };
 
-  fetch(
-    "https://sheet.best/api/sheets/52b26d52-6cec-4a00-9e1c-df626c784c4d",
+  fetch("https://sheet.best/api/sheets/e8d8549b-2450-4a66-80d9-9d1368395701",
     {
       method: "POST",
       mode: "cors",
@@ -26,11 +25,11 @@ form.addEventListener("submit", (e) => {
       if (response.ok) {
         window.location.href = "hacer_consulta.html";
       } else {
-        console.log("Datos incorrectos");
+        console.error("Datos incorrectos");
       }
     })
     .catch((error) => {
       console.log("Error", error);
-      alert("Hubo un problema.");
+      alert("Hubo un problema istrarse.");
     });
 });
