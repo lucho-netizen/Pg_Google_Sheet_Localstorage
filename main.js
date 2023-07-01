@@ -31,6 +31,6 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => {
       console.log("Error", error);
-      alert("Hubo un problema al registrarse.");
+      alert("Hubo un problema.");
     });
 });
